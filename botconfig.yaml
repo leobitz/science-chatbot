@@ -1,0 +1,10 @@
+
+corpus_file: pubmed-dataset/pubmed-dataset/train.txt
+max_corpus_samples: 10000 # maximum samples of the corpus. if -1, then all samples will be taken
+doc2vec_window_size: 256 # a chunk will have 256 tokens
+doc2vec_stride_size: 128 # a window will slide with stride
+include_explanation: True # explain the answer
+rephrase_explanation: True # rephrase the explanation or give me raw context
+num_explanation_sentence: 2 # maximum sentences for explanation
+answer_score_threshold: 0.5 # confidence level for the model about the answer
+topic_search: True # use hierarchial instead of linear search
